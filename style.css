@@ -1,27 +1,23 @@
-html, body {
-  height: 100%;
+body {
   margin: 0;
 }
 
 .flex-container {
   display : flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .one {
   display: flex;
   background: #1F2937;
+  justify-content: center;
   color : white;
   padding:  64px;
 }
 
 .one-subtext {
   max-width: 400px;
-}
-
-aside {
-  flex: 1 0 0;
-  min-width: 100px;
 }
 
 .two {
@@ -54,26 +50,26 @@ aside {
 
 .four {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background: white;
+  min-height: 200px;
 }
 
 .call-to-action {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   background: #3882F6;
+  gap: 48px;
+  padding: 32px 64px;
+  border-radius: 8px;
   color: white;
-  padding: 30px 300px;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .call-to-action-button {
   color: white;
-  border: 2px;
-  border-color: white;
-  border-style: solid;
+  border: 2px solid white;
 }
 
 .call-to-action .text {
@@ -124,10 +120,6 @@ button {
   margin-top: 8px;
 }
 
-body {
-  margin: 0;
-}
-
 .information {
   text-align: center;
 }
@@ -149,11 +141,9 @@ body {
 
 .footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
   background-color: #1F2937;
   padding: 8px 0;
-  margin-top: auto;
 }
